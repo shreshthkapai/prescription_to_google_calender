@@ -27,6 +27,8 @@ conda env create -f environment.yml
    
    
    4.1 Follow the Google Calendar API Python Quickstart guide to enable the API and obtain the credentials.json file.
+
+
    4.2 Paste the JSON data in the credentials.json file in the google_auth_json_files directory located at the root of this repository.
 
 ##📌 To-Do / Future Enhancements
