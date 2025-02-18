@@ -34,9 +34,7 @@ def convert_to_gcal_events(formatted_events):
             }
         }
         
-        # Check if it's an all-day event (has 'date') or timed event (has 'dateTime')
         if 'date' in event['start']:
-            # All-day event (like tests and follow-ups)
             gcal_event['start'] = {
                 'date': event['start']['date'],
                 'timeZone': 'Asia/Kolkata'
@@ -46,7 +44,6 @@ def convert_to_gcal_events(formatted_events):
                 'timeZone': 'Asia/Kolkata'
             }
         else:
-            # Timed event (like medicine schedules)
             start_dt = datetime.strptime(event['start']['dateTime'], '%Y-%m-%dT%H:%M:%S')
             end_dt = start_dt + timedelta(minutes=30)
             
