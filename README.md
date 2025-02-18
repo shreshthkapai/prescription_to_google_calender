@@ -2,7 +2,7 @@
 Transform prescriptions into structured calendar reminders effortlessly! This project automates the extraction of medicines, tests, and checkup schedules from prescriptions and syncs them with Google Calendar.
 
 ## 🚀 Features
-1) OCR-Powered Extraction: Converts prescription images into text It supports both hand-written and printed text.
+1) OCR-Powered Extraction: Converts prescription images into text. It supports both hand-written and printed text.
 2) AI Processing: Identifies medicines, dosages, and schedules.
 3) Google Calendar Integration: Automatically adds reminders.
 4) Easy to Use: Just upload a prescription image and stay organized.
