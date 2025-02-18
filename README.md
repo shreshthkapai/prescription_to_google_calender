@@ -31,7 +31,7 @@ conda env create -f environment.yml
 
    4.2 Paste the JSON data in the credentials.json file in the google_auth_json_files directory located at the root of this repository.
 
-##📌 To-Do / Future Enhancements
+## 📌 To-Do / Future Enhancements
 🔜 Add a simple web UI for user uploads
 🔜 Support for multiple languages
 🔜 Integration with other calendar apps
