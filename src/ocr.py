@@ -50,19 +50,14 @@ def extract_text_from_image(image_path):
 import re
 
 def clean_text(text):
-    # Remove all hyphens
     text = re.sub(r'-', ' ', text)
     
-    # Remove excessive non-word characters but keep necessary punctuation
     text = re.sub(r'[^\w\s.,()%/]', '', text)
 
-    # Remove multiple spaces and ensure single spaces
     text = re.sub(r'\s+', ' ', text)
 
-    # Replace multiple newlines with a single newline
     text = re.sub(r'\n+', '\n', text)
 
-    # Ensure spacing around punctuation marks
     text = re.sub(r'([.,])([^\s])', r'\1 \2', text)
 
     return text.strip()
