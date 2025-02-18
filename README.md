@@ -1,2 +1,4 @@
-# prescription_to_google_calender
-This project leveraged openai OCR to extract text from medical prescription images and adds medicine timings, test timings/dates and follow up dates to your google calender.
+# 📌 Prescription to Google Calendar
+Transform prescriptions into structured calendar reminders effortlessly! This project automates the extraction of medicines, tests, and checkup schedules from prescriptions and syncs them with Google Calendar.
+
+🚀 Features
