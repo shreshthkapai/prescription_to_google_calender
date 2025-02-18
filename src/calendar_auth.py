@@ -2,7 +2,7 @@ import os
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
-from googleapiclient.discovery import build  # Add this import
+from googleapiclient.discovery import build  
 
 SCOPES = ["https://www.googleapis.com/auth/calendar.events"]
 
@@ -22,8 +22,7 @@ def authenticate_google_calender():
 
         with open(token_path, "w") as token_file:
             token_file.write(creds.to_json())
-
-    # Build and return the service instead of just credentials
+            
     try:
         service = build('calendar', 'v3', credentials=creds)
         return service
